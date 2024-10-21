@@ -2,6 +2,8 @@
     Bubble Sort
     <---------->
 
+    - Bubble sort algorithm is an algorithm that sorts an array by comparing two adjacent elements and swapping them.
+
     Input: [36, 19, 28, 12, 5],    Output: [5, 12, 19, 28, 36]
 
     Round - 1
