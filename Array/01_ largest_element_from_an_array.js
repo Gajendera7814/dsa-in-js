@@ -1,6 +1,6 @@
 /*
-    Find the Largest Element from an Array.
-    <-------------------------------------->
+    Find the Largest Element from an Array
+    <------------------------------------->
 
     Input: [1, 8, 7, 56, 90],    Output: 90
 
