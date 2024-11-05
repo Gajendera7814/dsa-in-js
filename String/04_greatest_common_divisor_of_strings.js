@@ -3,6 +3,7 @@
     <--------------------------------->    <---------------->
 
     Topics :- Math and String
+    **************************
 
     Given two strings str1 and str2, return the largest string x such that x divides both str1 and str2.
 
