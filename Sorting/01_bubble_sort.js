@@ -67,6 +67,6 @@ const bubbleSort = (arr) => {
 console.log(bubbleSort([36, 19, 28, 12, 5])); // Output: [ 5, 12, 19, 28, 36 ]
   
 /*
-    Time Complexity = O(n^2)
-    Space Complexity = O(1)
+    Time Complexity = O(n^2).
+    Space Complexity = O(1).
 */
