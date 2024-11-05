@@ -17,7 +17,7 @@ const charFrequency = (str) => {
     
     return frequency;
 };
-console.log(charFrequency("Gajendera"));
+console.log(charFrequency("Gajendera")); // Output: { G: 1, a: 2, j: 1, e: 2, n: 1, d: 1, r: 1 }
 
 /*
     Time Complexity: O(n)
@@ -38,7 +38,7 @@ const charFrequencyForEach = (str) => {
 
     return freqCounter;
 };
-console.log(charFrequencyForEach("hello"));
+console.log(charFrequencyForEach("hello")); // Output: { h: 1, e: 1, l: 2, o: 1 }
 
 
 //<<<<<<<<<<<<<------------------------------------ Using reduce --------------------------------->>>>>>>>>>>>>>>//
@@ -49,7 +49,7 @@ const charFrequencyReduce = (str) => {
         return acc;
     }, {});
 };
-console.log(charFrequencyReduce("hello world"));
+console.log(charFrequencyReduce("hello world")); // Output: { h: 1, e: 1, l: 3, o: 2, ' ': 1, w: 1, r: 1, d: 1 }
 
 
 //<<<<<<<<<<<<<-------------------------------------- Using map ---------------------------------->>>>>>>>>>>>>>>//
@@ -60,7 +60,7 @@ const charFrequencyReduceMap = (str) => {
         return acc;
     }, new Map());
 };
-console.log(charFrequencyReduceMap("school"));
+console.log(charFrequencyReduceMap("school")); // Output: Map(5) { 's' => 1, 'c' => 1, 'h' => 1, 'o' => 2, 'l' => 1 }
 
 
 /*
