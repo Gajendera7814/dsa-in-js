@@ -100,7 +100,7 @@ console.log(rotateInPlace(matrix)); // Output: [[7, 4, 1], [8, 5, 2], [9, 6, 3]]
         - Move the saved top element to the right.
 */
 
-const rotateLayerByLayer = function(matrix) {
+const rotateLayerByLayer = (matrix) => {
     const n = matrix.length;
 
     for (let layer = 0; layer < Math.floor(n / 2); layer++) {
@@ -155,7 +155,7 @@ console.log(rotateLayerByLayer(matrix2)); // Output: [[7, 4, 1], [8, 5, 2], [9, 
         result[j][n − i − 1] = matrix[i][j].
 */
 
-const rotateUsingNewMatrix = function(matrix) {
+const rotateUsingNewMatrix = (matrix) => {
     const n = matrix.length;
     const result = Array.from({ length: n }, () => Array(n).fill(0));
 
@@ -198,7 +198,7 @@ console.log(rotateUsingNewMatrix(matrix3)); // Output: [[7, 4, 1], [8, 5, 2], [9
     - Use a temporary variable for swapping.
 */
 
-const rotateMath = function(matrix) {
+const rotateMath = (matrix) => {
     const n = matrix.length;
 
     for (let i = 0; i < Math.floor(n / 2); i++) {
