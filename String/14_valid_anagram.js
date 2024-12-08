@@ -10,17 +10,17 @@
     Input: s = "rat", t = "car",    Output: false
 */
 
+/*<----------------------------------------- Using Hash Table ----------------------------------------------------->*/
+
 const isAnagram = (s, t) => {
     if (s.length !== t.length) return false;
 
     const charCount = {};
 
-    // Count characters in string `s`
     for (let char of s) {
         charCount[char] = (charCount[char] || 0) + 1;
     }
 
-    // Subtract character counts using string `t`
     for (let char of t) {
         if (!charCount[char]) {
             return false;
@@ -30,5 +30,32 @@ const isAnagram = (s, t) => {
 
     return true;
 };
-console.log(isAnagram("anagram", "nagaram")); // true
-console.log(isAnagram("rat", "car")); // false
+console.log(isAnagram("anagram", "nagaram")); // Output: true
+console.log(isAnagram("rat", "car")); // Output: false
+
+/*
+    Time Complexity: O(n)
+    Space Complexity: O(1) 
+*/
+
+
+
+/*<-------------------------------------------- Using Sorting ----------------------------------------------------->*/
+
+const isAnagramUsingSorting = (s, t) => {
+    if (s.length !== t.length) return false;
+
+    return s.split('').sort().join('') === t.split('').sort().join('');
+};
+console.log(isAnagramUsingSorting("anagram", "nagaram")); // Output: true
+console.log(isAnagramUsingSorting("rat", "car")); // Output: false
+
+/*
+    Time Complexity: O(nlogn) (due to sorting)
+    Space Complexity: O(1)
+*/
+
+
+
+
+/*<-------------------------------------------- Using Sorting ----------------------------------------------------->*/
