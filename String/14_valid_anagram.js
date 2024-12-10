@@ -54,8 +54,3 @@ console.log(isAnagramUsingSorting("rat", "car")); // Output: false
     Time Complexity: O(nlogn) (due to sorting)
     Space Complexity: O(1)
 */
-
-
-
-
-/*<-------------------------------------------- Using Sorting ----------------------------------------------------->*/
